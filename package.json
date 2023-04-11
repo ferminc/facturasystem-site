@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Landwind is a free and open-source landing page built with Tailwind CSS and Flowbite for SaaS and product websites.",
   "scripts": {
-    "start": "parcel index.html --dist-dir ./dev-build",
-    "build": "parcel build index.html --public-url ./",
+    "start": "parcel ./*.html --dist-dir ./dev-build",
+    "build": "parcel build ./*.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1",
     "gh-deploy": "yarn build && git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
